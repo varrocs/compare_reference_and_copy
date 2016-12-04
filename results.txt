@@ -1,0 +1,65 @@
+Running tests with g++
+rm main main.o testfunction.o
+g++ -std=c++11 -O3 -c -o main.o main.cpp
+g++ -std=c++11 -O3 -c -o testfunction.o testfunction.cpp
+g++ -std=c++11 -O3 -o main main.o testfunction.o
+Copy execution time: 	14 ms, (iteration: 	1000000, string length: 	10)
+Ref execution time: 	11 ms, (iteration: 	1000000, string length: 	10)
+
+Copy execution time: 	72 ms, (iteration: 	5000000, string length: 	10)
+Ref execution time: 	58 ms, (iteration: 	5000000, string length: 	10)
+
+Copy execution time: 	147 ms, (iteration: 	10000000, string length: 	10)
+Ref execution time: 	119 ms, (iteration: 	10000000, string length: 	10)
+
+Copy execution time: 	53 ms, (iteration: 	1000000, string length: 	50)
+Ref execution time: 	15 ms, (iteration: 	1000000, string length: 	50)
+
+Copy execution time: 	266 ms, (iteration: 	5000000, string length: 	50)
+Ref execution time: 	79 ms, (iteration: 	5000000, string length: 	50)
+
+Copy execution time: 	539 ms, (iteration: 	10000000, string length: 	50)
+Ref execution time: 	151 ms, (iteration: 	10000000, string length: 	50)
+
+Copy execution time: 	64 ms, (iteration: 	1000000, string length: 	100)
+Ref execution time: 	28 ms, (iteration: 	1000000, string length: 	100)
+
+Copy execution time: 	326 ms, (iteration: 	5000000, string length: 	100)
+Ref execution time: 	123 ms, (iteration: 	5000000, string length: 	100)
+
+Copy execution time: 	648 ms, (iteration: 	10000000, string length: 	100)
+Ref execution time: 	244 ms, (iteration: 	10000000, string length: 	100)
+
+
+Running tests with clang++
+rm main main.o testfunction.o
+clang++ -std=c++11 -O3 -c -o main.o main.cpp
+clang++ -std=c++11 -O3 -c -o testfunction.o testfunction.cpp
+clang++ -std=c++11 -O3 -o main main.o testfunction.o
+Copy execution time: 	11 ms, (iteration: 	1000000, string length: 	10)
+Ref execution time: 	6 ms, (iteration: 	1000000, string length: 	10)
+
+Copy execution time: 	55 ms, (iteration: 	5000000, string length: 	10)
+Ref execution time: 	38 ms, (iteration: 	5000000, string length: 	10)
+
+Copy execution time: 	109 ms, (iteration: 	10000000, string length: 	10)
+Ref execution time: 	70 ms, (iteration: 	10000000, string length: 	10)
+
+Copy execution time: 	53 ms, (iteration: 	1000000, string length: 	50)
+Ref execution time: 	15 ms, (iteration: 	1000000, string length: 	50)
+
+Copy execution time: 	263 ms, (iteration: 	5000000, string length: 	50)
+Ref execution time: 	76 ms, (iteration: 	5000000, string length: 	50)
+
+Copy execution time: 	545 ms, (iteration: 	10000000, string length: 	50)
+Ref execution time: 	157 ms, (iteration: 	10000000, string length: 	50)
+
+Copy execution time: 	62 ms, (iteration: 	1000000, string length: 	100)
+Ref execution time: 	26 ms, (iteration: 	1000000, string length: 	100)
+
+Copy execution time: 	320 ms, (iteration: 	5000000, string length: 	100)
+Ref execution time: 	133 ms, (iteration: 	5000000, string length: 	100)
+
+Copy execution time: 	636 ms, (iteration: 	10000000, string length: 	100)
+Ref execution time: 	268 ms, (iteration: 	10000000, string length: 	100)
+
